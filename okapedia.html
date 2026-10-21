@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ОКАПЕДИЯ | Легенда на четырёх колёсах</title>
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+}
+
+body {
+background: #101114;
+color: #f2f2f2;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+
+header {
+background: #18191e;
+padding: 22px 8%;
+border-bottom: 2px solid #ff453a;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.logo {
+color: #ff453a;
+font-size: 27px;
+font-weight: bold;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 9px;
+}
+
+nav a:hover {
+color: #ff453a;
+}
+
+.hero {
+padding: 100px 8%;
+text-align: center;
+background:
+linear-gradient(135deg, #25262d, #101114);
+}
+
+.hero h1 {
+font-size: clamp(38px, 7vw, 75px);
+color: #ff453a;
+margin-bottom: 15px;
+}
+
+.hero p {
+max-width: 650px;
+margin: 0 auto 28px;
+color: #c8c8c8;
+font-size: 18px;
+}
+
+.button {
+display: inline-block;
+background: #ff453a;
+color: white;
+text-decoration: none;
+padding: 13px 25px;
+border-radius: 7px;
+font-weight: bold;
+}
+
+.button:hover {
+background: #d92e25;
+}
+
+section {
+padding: 65px 8%;
+}
+
+h2 {
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+.accent {
+color: #ff453a;
+}
+
+.cards {
+display: grid;
+grid-template-columns:
+repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: #1b1c22;
+padding: 25px;
+border-radius: 12px;
+border: 1px solid #303139;
+transition: 0.2s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+border-color: #ff453a;
+}
+
+.card h3 {
+color: #ff6258;
+margin-bottom: 10px;
+}
+
+.number {
+font-size: 30px;
+font-weight: bold;
+color: white;
+}
+
+.muted {
+color: #aaa;
+}
+
+.history {
+background: #191a20;
+}
+
+.history p, .about p {
+max-width: 850px;
+margin-bottom: 15px;
+}
+
+.fact {
+border-left: 4px solid #ff453a;
+padding: 18px;
+background: #222329;
+margin: 12px 0;
+border-radius: 0 8px 8px 0;
+}
+
+.quiz {
+background: #1b1c22;
+padding: 25px;
+border-radius: 12px;
+max-width: 600px;
+}
+
+.quiz button {
+display: block;
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+background: #303139;
+color: white;
+border: 1px solid #454650;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.quiz button:hover {
+background: #ff453a;
+}
+
+#result {
+margin-top: 18px;
+font-weight: bold;
+}
+
+footer {
+padding: 30px 8%;
+text-align: center;
+color: #888;
+background: #18191e;
+border-top: 1px solid #303139;
+}
+
+@media (max-width: 600px) {
+header {
+justify-content: center;
+text-align: center;
+}
+
+nav a {
+display: inline-block;
+margin: 5px;
+}
+
+section {
+padding: 45px 6%;
+}
+
+.hero {
+padding: 75px 6%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🚗 ОКАПЕДИЯ</div>
+<nav>
+<a href="#home">Главная</a>
+<a href="#specs">Характеристики</a>
+<a href="#history">История</a>
+<a href="#facts">Факты</a>
+<a href="#quiz">Викторина</a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<h1>МАЛЕНЬКАЯ.<br>ДА УДАЛЕНЬКАЯ.</h1>
+<p>
+ВАЗ-1111 «Ока» — компактный российский автомобиль,
+который стал настоящей легендой отечественного автопрома.
+Добро пожаловать в мир окушек!
+</p>
+<a href="#specs" class="button">Изучить Оку →</a>
+</section>
+
+<section id="specs">
+<h2>Технические <span class="accent">характеристики</span></h2>
+
+<div class="cards">
+<div class="card">
+<h3>Двигатель</h3>
+<div class="number">0.65–0.75 л</div>
+<p class="muted">Двухцилиндровый, в зависимости от версии</p>
+</div><div class="card">
+<h3>Мощность</h3>
+<div class="number">29–33 л.с.</div>
+<p class="muted">В зависимости от модификации</p>
+</div>
+
+<div class="card">
+<h3>Коробка передач</h3>
+<div class="number">4–5 МКПП</div>
+<p class="muted">Механическая, в зависимости от версии</p>
+</div>
+
+<div class="card">
+<h3>Кузов</h3>
+<div class="number">3 двери</div>
+<p class="muted">Компактный городской хетчбэк</p>
+</div>
+
+<div class="card">
+<h3>Привод</h3>
+<div class="number">Передний</div>
+<p class="muted">Ведущие передние колёса</p>
+</div>
+
+<div class="card">
+<h3>Главное преимущество</h3>
+<div class="number">Компактность</div>
+<p class="muted">Маленькие размеры и простая конструкция</p>
+</div>
+</div>
+</section>
+
+<section class="history" id="history">
+<h2>История <span class="accent">легенды</span></h2>
+
+<p>
+ВАЗ-1111 «Ока» — советский и российский малолитражный автомобиль,
+разработанный для повседневных поездок по городу.
+</p>
+
+<p>
+Серийное производство началось в 1988 году.
+Автомобиль выпускался на нескольких предприятиях,
+включая ВАЗ, КамАЗ и СеАЗ.
+</p>
+
+<p>
+Благодаря небольшим размерам, экономичности и относительно
+простой конструкции Ока стала узнаваемой машиной на дорогах.
+Её использовали для поездок на работу, учёбу и дачу.
+</p>
+
+<p>
+Производство семейства Ока завершилось в 2008 году.
+Однако автомобиль до сих пор встречается на дорогах,
+а некоторые владельцы создают необычные проекты и тюнинг.
+</p>
+</section>
+
+<section id="facts">
+<h2>Интересные <span class="accent">факты</span></h2>
+
+<div class="fact">
+<b>01. Маленький размер</b>
+<p>Ока создавалась как максимально компактный автомобиль для города.</p>
+</div>
+
+<div class="fact">
+<b>02. Два цилиндра</b>
+<p>Её двигатель имеет всего два цилиндра — необычное решение для легковой машины.</p>
+</div>
+
+<div class="fact">
+<b>03. Не только для города</b>
+<p>Владельцы используют Оку и для дальних поездок, и для необычных автомобильных проектов.</p>
+</div>
+
+<div class="fact">
+<b>04. Народная легенда</b>
+<p>Несмотря на скромные размеры, Ока получила собственную фанатскую культуру.</p>
+</div>
+</section>
+
+<section class="about" id="quiz">
+<h2>Викторина <span class="accent">«Знаток Оки»</span></h2>
+
+<p>Проверь, насколько хорошо ты знаешь легендарную окушку!</p>
+
+<div class="quiz">
+<h3 id="question">В каком году началось серийное производство Оки?</h3>
+
+<div id="answers">
+<button onclick="checkAnswer(0)">1975</button>
+<button onclick="checkAnswer(1)">1988</button>
+<button onclick="checkAnswer(2)">2005</button>
+</div>
+
+<p id="result"></p>
+<p id="score">Счёт: 0</p>
+
+<button id="next" onclick="nextQuestion()" style="display:none">
+Следующий вопрос →
+</button>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>🚗 ОКАПЕДИЯ © 2026</p>
+<p>Сделано с любовью к маленьким автомобилям.</p>
+<p>Ока — маленькая машина с большим характером!</p>
+</footer>
+
+<script>
+const questions = [
+{
+q: "В каком году началось серийное производство Оки?",
+a: ["1975", "1988", "2005"],
+correct: 1
+},
+{
+q: "Сколько цилиндров у двигателя классической Оки?",
+a: ["Два", "Четыре", "Шесть"],
+correct: 0
+},
+{
+q: "Какой привод у ВАЗ-1111?",
+a: ["Задний", "Полный", "Передний"],
+correct: 2
+},
+{
+q: "Сколько дверей у кузова Оки?",
+a: ["Три", "Пять", "Четыре"],
+correct: 0
+},
+{
+q: "В каком году завершилось производство Оки?",
+a: ["1995", "2008", "2020"],
+correct: 1
+}
+];
+let current = 0;
+let points = 0;
+let answered = false;
+
+function showQuestion() {
+answered = false;
+document.getElementById("question").textContent =
+questions[current].q;
+
+document.getElementById("result").textContent = "";
+document.getElementById("next").style.display = "none";
+
+const box = document.getElementById("answers");
+box.innerHTML = "";
+
+questions[current].a.forEach((answer, index) => {
+const button = document.createElement("button");
+button.textContent = answer;
+button.onclick = () => checkAnswer(index);
+box.appendChild(button);
+});
+}
+
+function checkAnswer(index) {
+if (answered) return;
+answered = true;
+
+const correct = questions[current].correct;
+const result = document.getElementById("result");
+
+if (index === correct) {
+points++;
+result.textContent = "Верно! Настоящий окувод! 🔥";
+} else {
+result.textContent =
+"Не угадал! Правильный ответ: " +
+questions[current].a[correct];
+}
+
+document.getElementById("score").textContent =
+"Счёт: " + points + " из " + questions.length;
+
+document.getElementById("next").style.display = "block";
+
+if (current === questions.length - 1) {
+document.getElementById("next").textContent =
+"Пройти заново ↻";
+}
+}
+
+function nextQuestion() {
+if (current === questions.length - 1) {
+current = 0;
+points = 0;
+document.getElementById("score").textContent =
+"Счёт: 0 из " + questions.length;
+} else {
+current++;
+}
+
+showQuestion();
+}
+
+</script>
+
+</body>
+</html>
